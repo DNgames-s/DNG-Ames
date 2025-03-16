@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>DNG-Ames</title>
     <link
       rel="stylesheet"
@@ -336,7 +337,10 @@
   <body>
     <header>
       <h1>DNG-Ames</h1>
-      <button class="channel", onclick="channell()">подписаться</button>
+
+      <form action="https://dng_ames.t.me" method="get" target="_self">
+      <button class="channel">подписаться</button>
+      </form>
       <p>Команда профессиональных программистов с фокусом на инновации</p>
     </header>
 
@@ -538,10 +542,6 @@
       <p>&copy; 2025 DNG-Ames. Все права защищены.</p>
     </footer>
     <script>
-
-      function channell() {
-        window.location.href = 'https://dng_ames.t.me';
-      }
 
       document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver(
