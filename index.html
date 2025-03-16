@@ -322,11 +322,21 @@
         opacity: 1;
         transform: translateY(0);
       }
+
+      .channel {
+        border: 0px;
+        color: #bb86fc;
+        background-color: #380070;
+        height: 30px;
+        border-radius: 7px;
+      }
+
     </style>
   </head>
   <body>
     <header>
       <h1>DNG-Ames</h1>
+      <button class="channel", onclick="channell()">подписаться</button>
       <p>Команда профессиональных программистов с фокусом на инновации</p>
     </header>
 
@@ -528,6 +538,11 @@
       <p>&copy; 2025 DNG-Ames. Все права защищены.</p>
     </footer>
     <script>
+
+      function channell() {
+        window.location.href = 'https://dng_ames.t.me';
+      }
+
       document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver(
           entries => {
