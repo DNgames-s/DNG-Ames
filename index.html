@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>DNG-Ames</title>
     <link
       rel="stylesheet"
@@ -322,11 +323,25 @@
         opacity: 1;
         transform: translateY(0);
       }
+
+      .channel {
+        border: 0px;
+        color: #bb86fc;
+        background-color: #380070;
+        height: 30px;
+        border-radius: 7px;
+        z-index: 2;
+      }
+
     </style>
   </head>
   <body>
     <header>
       <h1>DNG-Ames</h1>
+
+      <form action="https://dng_ames.t.me" method="get" target="_self">
+      <button class="channel">подписаться</button>
+      </form>
       <p>Команда профессиональных программистов с фокусом на инновации</p>
     </header>
 
@@ -357,7 +372,7 @@
             class="team-card gold fade-in"
           >
             <i class="fa-solid fa-crown"></i>
-            <img src="/images/spucme.png" alt="Фото участника" />
+            <img src="./images/spucme.png" alt="Фото участника" />
             <h3>Spucme</h3>
             <p>Full-Stack разработчик - создатель</p>
           </a>
@@ -367,7 +382,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/unknown.png" alt="Фото участника" />
+            <img src="./images/unknown.png" alt="Фото участника" />
             <h3>Vuiku Proger</h3>
             <p>Python - разработчик</p>
           </a>
@@ -377,7 +392,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/neymo.png" alt="Фото участника" />
+            <img src="./images/neymo.png" alt="Фото участника" />
             <h3>neymo</h3>
             <p>Python - разработчик</p>
           </a>
@@ -387,7 +402,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/nixx-mare.png" alt="Фото участника" />
+            <img src="./images/nixx-mare.png" alt="Фото участника" />
             <h3>NixxMare</h3>
             <p>DevOps</p>
           </a>
@@ -397,7 +412,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/soyfer.png" alt="Фото участника" />
+            <img src="./images/soyfer.png" alt="Фото участника" />
             <h3>SOYFER</h3>
             <p>WEB - разработчик</p>
           </a>
@@ -407,7 +422,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/ivan.png" alt="Фото участника" />
+            <img src="./images/ivan.png" alt="Фото участника" />
             <h3>Иван</h3>
             <p>Fullstack - разработчик</p>
           </a>
@@ -417,7 +432,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/unknown.png" alt="Фото участника" />
+            <img src="./images/unknown.png" alt="Фото участника" />
             <h3>Кирилл</h3>
             <p>WEB - разработчик</p>
           </a>
@@ -427,7 +442,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/caskh.png" alt="Фото участника" />
+            <img src="./images/caskh.png" alt="Фото участника" />
             <h3>caskh</h3>
             <p>Python - разработчик</p>
           </a>
@@ -437,7 +452,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/so&ka.png" alt="Фото участника" />
+            <img src="./images/so&ka.png" alt="Фото участника" />
             <h3>So&ka</h3>
             <p>Python - разработчик</p>
           </a>
@@ -447,7 +462,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/green-tea.png" alt="Фото участника" />
+            <img src="./images/green-tea.png" alt="Фото участника" />
             <h3>Green Tea</h3>
             <p>Python/C++ - разработчик</p>
           </a>
@@ -457,7 +472,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/ohmnic.png" alt="Фото участника" />
+            <img src="./images/ohmnic.png" alt="Фото участника" />
             <h3>Ohmnic</h3>
             <p>Python/Web - разработчик</p>
           </a>
@@ -467,7 +482,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/derek-frost.png" alt="Фото участника" />
+            <img src="./images/derek-frost.png" alt="Фото участника" />
             <h3>Derek_Frost</h3>
             <p>Python - разработчик</p>
           </a>
@@ -477,7 +492,7 @@
             rel="noreferrer noopener"
             class="team-card fade-in"
           >
-            <img src="/images/danchik.png" alt="Фото участника" />
+            <img src="./images/danchik.png" alt="Фото участника" />
             <h3>Danchik</h3>
             <p>Ведущий тгк</p>
           </a>
@@ -528,6 +543,7 @@
       <p>&copy; 2025 DNG-Ames. Все права защищены.</p>
     </footer>
     <script>
+
       document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver(
           entries => {
